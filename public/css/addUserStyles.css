@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  
+  /* ============================================ MAIN ============================================ */
+  
+  
+  .editProduct {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 20px 10px;
+  
+  }
+  
+  main section {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 2px 2px rgba(255, 255, 255, 0.5), 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 40%;
+  }
+
+  .edit-product-text, .edit-back-product {
+    font-size: 15px;
+    text-align: center; 
+    padding: 5px;
+  }
+  
+  .edit-log-nameProduct, .edit-log-description, .edit-log-price {
+    margin: 5px;
+    border: 1px solid var(--red);
+    border-radius: 20px;
+    padding: 8px;
+    display: flex;
+    width: 100%;
+  }
+  
+  .form-editProduct {
+    flex-wrap: wrap;
+  }
+  
+  .form-editProduct input {
+    border: none;
+    background-color: var(--light-gray);
+    font-size: 14px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  
+  .edit-buttonSave {
+    text-align: center;
+  
+  }
+  
+  .edit-buttonSave button {
+    margin: 5px;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: -2px -2px 1px 2px rgba(255, 255, 255, 0.5), 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  
+  }

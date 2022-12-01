@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head', {webtitle: "Agregar productos" }) %>
+
+  <body>
+    <%- include('./partials/header') %>
+      <main>
+        <div class="editProduct">
+          <section>
+            <div class="edit-product-text">
+              <p>NUEVO USUARIO.</p>
+            </div>
+            <form action="/users/addUser" method="POST" enctype="application/x-www-form-urlencoded" class="form-editProduct">
+              
+              <div class="edit-log-nameProduct">
+                <input type="text" name="last_name" id="last_name" placeholder="Apellido">
+              </div>
+              <div class="edit-log-nameProduct">
+                <input type="text" name="name" id="name" placeholder="Nombre">
+              </div>
+              <div class="edit-log-nameProduct">
+                <input type="email" name="email" id="email" placeholder="email">
+              </div>
+    
+              <div class="edit-buttonSave">
+                <button type="submit">Guardar</button>          
+              </div>
+            </form>
+            <div class="edit-back-product">
+              <a href="/users">Volver a usuarios</a>
+            </div>
+          </section>
+        </div>
+        </div>
+      </main>      
+  </body>
+
+</html>

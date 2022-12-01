@@ -1,0 +1,66 @@
+.locals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+  }
+
+nav {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    -webkit-box-shadow: 0px 7px 16px -8px var(--black);
+    box-shadow: 0px 7px 16px -8px var(--black);
+    border-radius: 1rem;
+}
+
+nav,
+.nav-items,
+.nav-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav .nav-items,
+.nav-items ul {
+    gap: 1rem;
+}
+
+nav .nav-items ul li {
+    list-style: none;
+}
+
+nav .nav-items ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.nav-items ul li a.red {
+    background-color: var(--red);
+    padding: .2rem .4rem;
+    color: var(--white);
+    border-radius: .5rem;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: .8rem;
+}
+
+nav .left-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 50%;
+}
+
+nav input {
+    border-radius: .5rem;
+    height: 2rem;
+    padding: .6rem;
+    border: 1px solid var(--dark-gray);
+    width: 100%;
+}

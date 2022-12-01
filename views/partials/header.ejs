@@ -1,0 +1,27 @@
+<header>
+    <% if (locals.isLogged) { %>
+      <div class="locals">
+        <a href="/users/profile"> <h3>¡Hola <%= locals.isLogged.logUser %>! </h3> </a>
+    </div>
+        <% } %>
+    <nav>
+      <div class="left-section">
+        <a href="/">HOME</a>
+      </div>
+      <div class="menu">
+        <div class="nav-items">
+          <ul>  
+            <% if (locals.isLogged) { %>
+              <li>
+                  <a href="/users/logout">Cerrar sesión</a>
+              </li> 
+            <% } else { %>  
+            <li><a class="red" href="/users/login">Iniciar sesión</a></li>
+            <li><a href="/users/register">Registrate</a></li>
+            <% } %>
+          </ul> 
+      </div>
+    </div>
+    </nav>
+    
+  </header>
